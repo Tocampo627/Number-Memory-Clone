@@ -1,0 +1,29 @@
+{
+  "name": "number-memory-clone",
+  "version": "0.1.0",
+  "description": "A memory game",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tocampo627/Number-Memory-Clone.git"
+  },
+  "keywords": [
+    "game",
+    "react",
+    "parcel"
+  ],
+  "author": "Tanya Ocampo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tocampo627/Number-Memory-Clone/issues"
+  },
+  "homepage": "https://github.com/Tocampo627/Number-Memory-Clone#readme",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}
