@@ -1,8 +1,8 @@
-import './header.css';
+import './navbar.css';
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 
-export const Header = () => {
+export const NavBar = () => {
   return (
     <div className="navbar">
       <Link to="/">

@@ -1,13 +1,13 @@
 import './index.css';
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { Header } from './Header/Header';
+import { NavBar } from './NavBar';
 import { Home } from './pages';
 
 export const App = () => {
   return (
     <main>
-      <Header />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
