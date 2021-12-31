@@ -1,17 +1,14 @@
-import React from 'react';
 import './header.css';
+import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
-    <body>
-      <div class="navbar">
-        <a class="active" href="#">
-          <b class="options"></b> HUMAN BENCHMARK
-        </a>
-        <a href="#">
-          <i class="options"></i> DASHBOARD
-        </a>
-      </div>
-    </body>
+    <div className="navbar">
+      <Link to="/">
+        <b className="options">HUMAN BENCHMARK</b>
+      </Link>
+      <Link to="/">Home</Link>
+    </div>
   );
 };
