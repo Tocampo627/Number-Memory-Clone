@@ -4,11 +4,11 @@ import { Routes, Route, Link } from 'react-router-dom';
 
 export const NavBar = () => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <Link to="/">
         <b className="options">HUMAN BENCHMARK</b>
       </Link>
       <Link to="/">Home</Link>
-    </div>
+    </nav>
   );
 };
