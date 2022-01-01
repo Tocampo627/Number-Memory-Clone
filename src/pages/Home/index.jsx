@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { Tile } from './Tile';
+
 import { NumberMemoryIcon } from '../../components/Icons/NumberMemoryIcon';
 
 export const Home = () => {
@@ -10,6 +11,7 @@ export const Home = () => {
         icon={<NumberMemoryIcon />}
         title="Number Memory"
         desc="Remember the longest number you can."
+        path="/tests/number-memory"
       />
     </section>
   );

@@ -4,17 +4,20 @@ import './tile.css';
 /* Node Modules */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Routes, Route, Link } from 'react-router-dom';
 
 /* Component */
 export const Tile = (props) => {
   return (
-    <div className="tile">
-      {props.icon && <div>{props.icon}</div>}
-      <div>
-        <p className="title">{props.title}</p>
-        <p className="desc">{props.desc}</p>
+    <Link to={props.path}>
+      <div className="tile">
+        {props.icon && <div>{props.icon}</div>}
+        <div>
+          <p className="title">{props.title}</p>
+          <p className="desc">{props.desc}</p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -28,4 +31,8 @@ Tile.propTypes = {
    * Title of the Tile
    */
   title: PropTypes.string.isRequired,
+  /**
+   * path
+   */
+  path: PropTypes.string.isRequired,
 };
