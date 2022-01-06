@@ -1,0 +1,19 @@
+.game {
+  grid-area: game;
+  background: rgb(43, 135, 209);
+}
+
+.info {
+}
+
+.container {
+  text-align: center;
+  color: white;
+  /* BEGIN LAYOUT */
+  height: 100%;
+  display: grid;
+  grid:
+    [row1-start] 'game game' 40% [row1-end]
+    [row2-start] 'info info' 60% [row2-end]
+    / auto auto;
+}

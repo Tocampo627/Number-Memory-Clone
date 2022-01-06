@@ -6,7 +6,7 @@ import { NumberMemoryIcon } from '../../components/Icons/NumberMemoryIcon';
 
 export const Home = () => {
   return (
-    <section>
+    <section style={{ padding: '20px 40px' }}>
       <Tile
         icon={<NumberMemoryIcon />}
         title="Number Memory"

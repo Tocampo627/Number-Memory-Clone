@@ -1,11 +1,15 @@
 /* Node Modules */
 import React from 'react';
+import './index.css';
 
 /* Component */
 export const Game = () => {
   return (
-    <section>
-      <h1>Game</h1>
-    </section>
+    <div className="container">
+      <section className="game">
+        <h1>Number Memory</h1>
+      </section>
+      <section className="info"></section>
+    </div>
   );
 };
