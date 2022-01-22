@@ -1,14 +1,44 @@
 .game {
   grid-area: game;
   background: rgb(43, 135, 209);
+  position: relative;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
 }
 
+.game-content {
+  margin: 5rem 2rem;
+  width: 60%;
+  animation-name: slideFadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+.start-button {
+  padding: 10px 20px;
+  background: rgb(255, 209, 84);
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: inherit;
+  color: rgb(51, 51, 51) !important;
+  cursor: pointer;
+}
+.start-button:hover {
+  background-color: white;
+}
 .info {
 }
 
 .container {
   text-align: center;
   color: white;
+  font-size: 2em;
   /* BEGIN LAYOUT */
   height: 100%;
   display: grid;
