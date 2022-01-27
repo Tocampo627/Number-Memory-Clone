@@ -1,0 +1,51 @@
+.game-container {
+  font-size: 2em;
+  background-color: #e6e8f4;
+  /* BEGIN LAYOUT */
+  display: grid;
+  grid:
+    [row1-start] 'game' 45% [row1-end]
+    [row2-start] 'info' 55% [row2-end]
+    / auto;
+  height: 100%;
+  --game-container-width: 60%;
+}
+
+.game {
+  grid-area: game;
+  background: rgb(43, 135, 209);
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-content {
+  width: var(--game-container-width);
+  animation-name: slideFadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+.start-button {
+  padding: 10px 20px;
+  background: rgb(255, 209, 84);
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: inherit;
+  color: rgb(51, 51, 51) !important;
+  cursor: pointer;
+}
+.start-button:hover {
+  background-color: white;
+}
+/* info container */
+.info {
+  grid-area: info;
+  justify-self: center;
+  width: var(--game-container-width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

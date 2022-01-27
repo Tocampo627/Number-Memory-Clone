@@ -1,0 +1,24 @@
+.tile {
+  /* Add some padding inside the card container */
+  padding: 30px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 1px 1px 1px lightgray;
+  background-color: white;
+  border-radius: 6px;
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tile .tile-title {
+  font-size: 30px;
+  align-self: flex-start;
+}
+
+.tile .tile-content {
+  flex-grow: 1;
+  align-self: center;
+  padding: 15px;
+  display: grid;
+  place-items: center;
+}

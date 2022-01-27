@@ -1,32 +1,29 @@
-.tile {
-  position: relative;
+.gameTile {
   height: 265px;
   width: 300px;
   display: grid;
   place-items: center;
   text-align: center;
   /* Add some padding inside the card container */
-  padding: 24px;
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
   transition: 0.3s;
 }
 
 /* On mouse-over, add a deeper shadow */
-.tile:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transform: translateY(-10px);
+.gameTile:hover {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
 }
 
-.tile p {
+.gameTile p {
   margin: 16px 0;
 }
 
-.tile .title {
+.gameTile .title {
   font-size: 24px;
   font-weight: 600;
 }
 
-.tile .desc {
+.gameTile .desc {
   font-size: 18px;
 }
