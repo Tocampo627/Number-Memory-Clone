@@ -22,7 +22,17 @@ export const Game = () => {
           <button className="start-button">Start</button>
         </div>
       </section>
-      <section className="info"></section>
+      <section className="info" style={{ width: '994px' }}>
+        <div className="add"></div>
+        <div className="tile-holder">
+          <div className="info-tile">
+            <p className="info-title"> Coming Soon! </p>
+          </div>
+          <div className="other-info-tile">
+            <p className="other-info-title"> Coming Soon! </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
