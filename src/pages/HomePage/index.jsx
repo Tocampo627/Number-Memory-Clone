@@ -1,13 +1,12 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import { Tile } from './Tile';
 
+import { GameTile } from '../../components/GameTile';
 import { NumberMemoryIcon } from '../../components/Icons/NumberMemoryIcon';
 
-export const Home = () => {
+export const HomePage = () => {
   return (
     <section style={{ padding: '20px 40px' }}>
-      <Tile
+      <GameTile
         icon={<NumberMemoryIcon />}
         title="Number Memory"
         desc="Remember the longest number you can."

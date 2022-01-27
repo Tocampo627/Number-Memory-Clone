@@ -1,8 +1,8 @@
 import './index.css';
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './NavBar';
-import { Home, Game } from './pages';
+import { HomePage, GamePage } from './pages';
 
 export const App = () => {
   return (
@@ -10,8 +10,8 @@ export const App = () => {
       <NavBar />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/tests/number-memory" element={<Game />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/tests/number-memory" element={<GamePage />} />
         </Routes>
       </main>
     </>

@@ -1,2 +1,2 @@
-export * from './Home';
-export * from './Game';
+export * from './HomePage';
+export * from './GamePage';
