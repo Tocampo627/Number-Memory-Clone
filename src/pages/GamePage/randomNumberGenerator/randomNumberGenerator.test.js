@@ -15,7 +15,7 @@ describe('randomNumberGenerator', () => {
     let numberOf1DigitTestsRan = 0;
     while (numberOf1DigitTestsRan < 1000) {
       const d1 = randomNumberGenerator(1);
-      expect(d1).toBeGreaterThan(1);
+      expect(d1).toBeGreaterThanOrEqual(1);
       expect(d1).toBeLessThanOrEqual(9);
       numberOf1DigitTestsRan++;
     }
