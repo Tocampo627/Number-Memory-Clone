@@ -6,7 +6,7 @@
   "source": "public/index.html",
   "scripts": {
     "start": "parcel",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
