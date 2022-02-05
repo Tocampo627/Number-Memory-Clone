@@ -1,6 +1,6 @@
 export const randomNumberGenerator = (numberOfDigits) => {
   //Your code here
-  if (typeof numberOfDigits !== 'number') {
+  if (typeof numberOfDigits !== 'number' || numberOfDigits <= 0) {
     throw Error('numbers expected');
   }
   let max = Math.floor(10 ** numberOfDigits);
